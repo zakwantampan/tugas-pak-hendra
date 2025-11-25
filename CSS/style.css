@@ -1,0 +1,1123 @@
+        *{
+           font-family: Arial, Helvetica, sans-serif;
+            margin:0;
+            text-decoration: none;
+            scroll-behavior:smooth;
+        }
+
+
+          .pertama{
+            position: fixed;
+            width: 100%;
+            height: 60px;
+            background: black;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            z-index: 999;
+            
+        }
+
+        .navbar{
+          width: 100%;
+          height: 60px;
+
+        }
+
+        .logo{
+            color: aliceblue;
+            font-weight: bold;
+            margin-left: 80px;
+            font-size: 130%;
+        }
+
+        .logo2 li a {
+    color: aliceblue;
+    display: inline-block;
+    position: relative;
+    padding: 8px 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.3s ease, color 0.3s ease;
+    
+}
+
+.logo2 {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+    margin-right: 40px;
+}
+
+/* gaya dasar untuk link */
+.logo2 li a {
+    color: aliceblue;
+    display: inline-block;
+    position: relative;
+    padding: 8px 15px;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* efek background biru dari tengah */
+.logo2 li a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: 100%;
+    background: rgb(66, 66, 255);
+    z-index: -1;
+    transition: transform 0.6s ease;
+    border-radius: 6px;
+}
+
+/* efek hover */
+.logo2 li a:hover {
+    color: white;
+    transform: scale(1.05);
+    font-weight: bold;
+}
+
+/* animasi background biru muncul dari tengah */
+.logo2 li a:hover::before {
+    transform: translateX(-50%) scaleX(1);
+}
+
+
+        div.logo2 li a {
+            color: aliceblue;
+            display:flex;
+            
+                      
+        }
+        
+        .logo3{
+            background-color: aliceblue;
+            width: 110px;
+            height: 30px;
+            border-radius: 20px;
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            margin-right: 70px;
+        }
+
+        div.logo3 a{
+            color:black
+        }
+
+        .kedua{
+          
+            width: 100%;
+            height: 91vh;
+            background-image: url(../img/Untitled\ design\ \(3\).png);
+            background-position: center;
+            margin-top: 0px;
+            background-repeat: no-repeat    ;
+            display: flex;
+            
+        }
+
+        .main {
+            color:aliceblue;
+            width: 100%;
+            height: 100%;
+            margin-left: 200px;
+            margin-top: 110px;
+            font-weight: bold;
+            opacity: 100%;
+        }
+
+        .intro{
+           display: flex;
+           
+           
+           
+        }
+
+        .intro1{
+            margin-top: 15px;
+            
+            font-weight: bold;
+            font-size: 250%;
+            
+            
+        }
+
+        .hello{
+            font-weight: bold;
+            opacity: 40%;
+            margin-left: 2px;
+        }
+
+        .dada{
+            margin-top: -5px;
+            margin-left: 2px;
+        }
+
+        .intro2{
+            margin-top: 15px;
+            opacity: 40%;
+
+        }
+
+        .intro3{
+            background: linear-gradient(to right,rgb(0, 0, 66),RGB(5, 66, 157));
+            width: 230px;
+            height: 45px;
+            margin-top: 20px;
+            border-radius: 20px;
+            border: 2px solid  black; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: visible;
+            transition: all 0.3s ease;
+            color: aliceblue;   
+           
+        }
+/* kode sendiri */
+
+/* github */
+.intro3::before,
+.intro3::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border: 3px solid rgb(0, 204, 255);
+  border-radius: 20px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.intro3:hover {
+  transform: scale(1.05);
+  box-shadow: 
+    0 0 25px rgba(115, 110, 254, 0.6),
+    0 0 45px rgba(94, 252, 232, 0.4);
+}
+
+.intro3:hover::before {
+  animation: ring-expand 1.5s ease-out infinite;
+}
+
+.intro3:hover::after {
+  animation: ring-expand 1.5s ease-out 0.5s infinite;
+}
+
+@keyframes ring-expand {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.6);
+    opacity: 0;
+  }
+}
+
+
+/* kode sendiri */
+        .mymine{
+            font-size: 120%;
+        }
+
+        .sosmed{
+            
+            display: flex;
+            align-items: start;
+             margin-top: 20px;
+             margin-left: 5px;
+        }
+
+        .pesbuk{
+            background-image:url(../img/pesbuk.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 70%;
+            width: 60px;
+            height: 60px;
+            background-color: rgb(0, 17, 62);
+            border-radius: 100px;
+            opacity: 70%;
+            position: relative;
+            overflow: visible;
+            transition: all 0.3s ease;
+           
+        }
+/* github */
+.pesbuk::before,
+.pesbuk::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border: 3px solid rgb(0, 204, 255);
+  border-radius: 100px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.pesbuk:hover {
+    opacity: 100%;
+  transform: scale(1.05);
+  box-shadow: 
+    0 0 25px rgba(115, 110, 254, 0.6),
+    0 0 45px rgba(94, 252, 232, 0.4);
+}
+
+.pesbuk:hover::before {
+  animation: ring-expand 1.5s ease-out infinite;
+}
+
+.pesbuk:hover::after {
+  animation: ring-expand 1.5s ease-out 0.5s infinite;
+}
+
+@keyframes ring-expand {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.6);
+    opacity: 0;
+  }
+}
+/* kode sendiri */
+        .ig{
+            background-image: url(../img/ige.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 70%;
+            width: 60px;
+            height: 60px;
+            background-color: rgb(0, 17, 62);
+            border-radius: 100px;
+            margin-left: 20px;
+            opacity: 70%;
+            position: relative;
+            overflow: visible;
+            transition: all 0.3s ease;
+        }
+
+/* github */
+.ig::before,
+.ig::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border: 3px solid rgb(0, 204, 255);
+  border-radius: 100px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.ig:hover {
+    opacity: 100%;
+  transform: scale(1.05);
+  box-shadow: 
+    0 0 25px rgba(115, 110, 254, 0.6),
+    0 0 45px rgba(94, 252, 232, 0.4);
+}
+
+.ig:hover::before {
+  animation: ring-expand 1.5s ease-out infinite;
+}
+
+.ig:hover::after {
+  animation: ring-expand 1.5s ease-out 0.5s infinite;
+}
+
+@keyframes ring-expand {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* kode sendiri */
+        .tt{
+            background-image: url(../img/tt.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 70%;
+            width: 60px;
+            height: 60px;
+            background-color: rgb(0, 17, 62);
+            border-radius: 100px;
+            margin-left: 20px;
+            opacity: 70%;
+            position: relative;
+            overflow: visible;
+            transition: all 0.3s ease;
+           
+        }
+
+        /* github */
+.tt::before,
+.tt::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border: 3px solid rgb(0, 204, 255);
+  border-radius: 100px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.tt:hover {
+    opacity: 100%;
+  transform: scale(1.05);
+  box-shadow: 
+    0 0 25px rgba(115, 110, 254, 0.6),
+    0 0 45px rgba(94, 252, 232, 0.4);
+}
+
+.tt:hover::before {
+  animation: ring-expand 1.5s ease-out infinite;
+}
+
+.tt:hover::after {
+  animation: ring-expand 1.5s ease-out 0.5s infinite;
+}
+
+@keyframes ring-expand {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.6);
+    opacity: 0;
+  }
+}
+/* kode sendiri */
+        .strava{
+            background-image: url(../img/strava.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 60%;
+            width: 60px;
+            height: 60px;
+            background-color: rgb(0, 17, 62);
+            border-radius: 100px;
+            margin-left: 20px;
+            opacity: 70%;
+            position: relative;
+            overflow: visible;
+            transition: all 0.3s ease;
+           
+        }
+
+        /* github */
+.strava::before,
+.strava::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border: 3px solid rgb(0, 204, 255);
+  border-radius: 100px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.strava:hover {
+    opacity: 100%;
+  transform: scale(1.05);
+  box-shadow: 
+    0 0 25px rgba(115, 110, 254, 0.6),
+    0 0 45px rgba(94, 252, 232, 0.4);
+}
+
+.strava:hover::before {
+  animation: ring-expand 1.5s ease-out infinite;
+}
+
+.strava:hover::after {
+  animation: ring-expand 1.5s ease-out 0.5s infinite;
+}
+
+@keyframes ring-expand {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.6);
+    opacity: 0;
+  }
+}
+
+/* kode sendiri */
+        .main2{
+            
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }    
+
+        .karakter{
+            background-image: url(../img/karakter.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 65%;
+            width: 100%;
+            height: 100%;
+            margin-right: 150px;
+            filter: drop-shadow(1px 1px 10px rgb(60, 209, 243));
+            
+        }
+
+        .tulisanA{
+          background:linear-gradient(to bottom right, black 50%,rgb(52, 52, 52));
+          font-size: 120%;
+          width: 100%;
+          height: 100%;
+          font-weight: bolder;
+          color: aliceblue;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          
+        }
+
+        .ketiga{
+            background: linear-gradient(to top left,rgb(7, 10, 63) 10%,rgb(6, 60, 140) ,rgb(7, 10, 63) 90%);
+            width: 100%;
+            height: 94vh;
+           
+        }
+
+        .about{
+          padding-top:10px ;
+          width: 100%;
+          height: 80px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size:200%;
+          font-weight: bold;
+        }
+
+        .garis{
+          display: flex;
+          justify-content: center;
+         
+          width: 100%;
+          height: 3px;
+        }
+
+        .garis2{
+          background-color: aliceblue;
+          width: 70px;
+          height: 3px;
+        }
+
+        
+        .about2{
+          margin-top: 20px;
+          display: flex;
+          color: white;
+          justify-content: center;
+          width: 100%;
+          height: 30%;
+          opacity: 50%;
+          font-size:100%;
+          font-weight: bold;
+          text-align: center;
+        }
+
+        .about3{   
+          display: flex;
+         
+          height: 100%;
+          
+    
+  
+        }
+
+        .aboutkiri{
+          
+          width: 33.34%;
+          height: 100%;
+        }
+
+        .cpp{
+          background-image: url(../img/c++.png);
+          background-size: 50%;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+          margin-left: 40px;
+          margin-top: -120px;
+        }
+
+        .pyt{
+          background-image: url(../img/python.png);
+          background-size: 50%;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+          margin-left: 300px;
+          margin-top: -500px
+        }
+
+        .aboutt4{
+          width: 33.34%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+    
+        }
+
+        .about4{
+          background:url(../img/orangbulet.png);
+          background-color: black;
+          width: 250px;
+          height: 250px;
+          border-radius: 100%;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center;
+          /* animation: ring-expand 1.5s ease-out infinite; */
+          filter: drop-shadow(1px 1px 20px rgb(60, 209, 243));
+          
+    
+        }
+
+        .aboutkanan{
+          width: 33.34%;
+          height: 100%;
+          
+        }
+
+        .php{
+          background-image: url(../img/php.png);
+          background-size: 100%;
+          background-repeat: no-repeat;
+          width: 60%;
+          height: 100%;
+          margin-left:160px;
+          margin-top: -90px;
+        }
+
+        .css{
+          background-image: url(../img/css.png);
+          background-size: 60%;
+          background-repeat: no-repeat;
+          width: 100%;
+          height: 100%;
+          margin-left: -120px;
+          margin-top: -540px;
+        }
+
+        .tulisanB{
+          background: linear-gradient(to bottom right, black 50%,rgb(52, 52, 52));
+          width: 100%;
+          height: 100%;
+          font-weight: bold;
+          font-size: 120%;
+          color: aliceblue;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+        }
+
+        
+        .keempat{
+            background: linear-gradient(to top right,rgb(7, 10, 63) 10%,rgb(6, 60, 140) ,rgb(7, 10, 63) 90%);
+            width: 100%;
+            height: 91vh;
+        }
+
+        .projek{
+          padding-top: 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          color: white;
+          font-size: 200%;
+          font-weight: bold;
+          
+        }
+
+        .projek2{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 3px;
+          margin-top: 10px;
+
+        }
+
+        .garis3{
+          background-color: aliceblue;
+          width: 70px;
+          height: 3px;
+          
+        }
+
+        .projek3 {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 18px;
+          margin-top: 30px;
+        }
+
+        .hasil1{
+          background-color: rgba(0, 0, 0, 0.529);
+          width: 330px;
+          height: 450px;
+          border-radius: 10px;
+          transition: 0.3s ease;
+        }
+
+        .hasil1:hover{
+          transform: translateY(-10px);
+          transition: 0.4s;
+          box-shadow: 0px 10px 20px rgb(0, 106, 255);
+        }
+
+        
+        .hasil2{
+          background-color: rgba(0, 0, 0, 0.529);
+          width: 330px;
+          height: 450px;
+          border-radius: 10px;
+        }
+        .hasil3{
+          background-color: rgba(0, 0, 0, 0.529);
+          width: 330px;
+          height: 450px;
+          border-radius: 10px;
+        }
+
+        .pro1{
+          margin-top:px;
+          background: url(../img/perpus.png);
+          background-size: 100%;
+          background-repeat: no-repeat;
+          width:100%;
+          height: 40%;
+          border-radius: 10px;
+        }
+
+        .pro2{
+          margin-left: 20px;
+          color: white;
+          font-weight: bold;
+          font-size: 130%;
+        }
+
+        .pro3{
+          margin-top: 5px;
+          margin-left: 20px;
+          color: white;
+          font-weight: bold;
+          opacity: 40%;
+          font-size: 110%;
+        }
+        .pro4{
+          margin-top: 5px;
+          margin-left: 20px;
+          color: white;
+          font-weight: bold;
+          opacity: 40%;
+        }
+        .isipro1{
+          margin-top:px;
+          background: url(../img/webfoto.png);
+          background-size: 100%;
+          background-repeat: no-repeat;
+          width:100%;
+          height: 40%;
+          border-radius: 10px;
+        }
+
+        .isipro2{
+          margin-left: 20px;
+          color: white;
+          font-weight: bold;
+          font-size: 130%;
+        }
+
+        .isipro3{
+          margin-top: 5px;
+          margin-left: 20px;
+          color: white;
+          font-weight: bold;
+          opacity: 40%;
+          font-size: 110%;
+        }
+        .isipro4{
+          margin-top: 5px;
+          margin-left: 20px;
+          color: white;
+          font-weight: bold;
+          opacity: 40%;
+        }
+        .isinya{
+          margin-top:px;
+          background: url(../img/webfoto.png);
+          background-size: 100%;
+          background-repeat: no-repeat;
+          width:100%;
+          height: 40%;
+          border-radius: 10px;
+        }
+
+        .isinya2{
+          margin-left: 20px;
+          color: white;
+          font-weight: bold;
+          font-size: 130%;
+        }
+
+        .isinya3{
+          margin-top: 5px;
+          margin-left: 20px;
+          color: white;
+          font-weight: bold;
+          opacity: 40%;
+          font-size: 110%;
+        }
+        .isinya4{
+          margin-top: 5px;
+          margin-left: 20px;
+          color: white;
+          font-weight: bold;
+          opacity: 40%;
+        }
+
+        .kelima{ 
+          background-color: rgb(0, 0, 73);
+          width: 100%;
+          height: 91vh;
+        }
+
+        .kontak{
+          width: 100%;
+          height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-weight: bold;
+          color: white;
+          font-size: 200%;
+          padding-top: 40px;
+        }
+
+        .kontak2{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 3px;
+          margin-top: 20px;
+
+        }
+
+        .kontak3{
+          display: flex;
+        }
+
+        .isikontak{
+          color: white;
+          opacity: 40%;
+          margin-top: 30px;
+          margin-left: 190px;
+        }
+
+        .isikontakk2{
+          color: white;
+          margin-top: 40px;
+          margin-left: 190px;
+        }
+
+        .isikontak2{
+          color: white;
+          margin-top: 20px;
+          margin-left: 190px;
+        }
+
+
+        .isikontak3{
+          margin-left: 190px;
+          margin-top: 40px;
+          display: flex;
+        }
+
+        .wa{
+          position: relative;
+          background-color: rgb(0, 0, 0);
+          width: 60px;
+          height: 60px;
+          opacity: 40%;
+          display: flex;
+          align-items: center;
+          border-radius: 100px;
+      
+          
+        }
+        .wa::after{
+          content: "WHATSAPP";
+          position: absolute;
+          color: white;
+          font-weight: bold;
+          padding-left: 65px;
+          font-size: 120%;
+          background-color: rgb(0, 0, 0);
+          width: 135px;
+          height: 60px;
+          opacity: 100%;
+          display: flex;
+          align-items: center;
+          border-radius: 100px;
+          box-shadow: rgb(255, 255, 255) 0px 0px 10px;
+          transform:scalex(0) ;
+          z-index: 1;
+          transition: 0.5s;
+          transform-origin: left;
+          
+        }
+
+        .wa:hover::after{
+          transform:scalex(1) ;
+          
+        }
+
+        .wa:hover + .dc{
+          margin-left: 160px;
+          transition: 0.5s;
+        }
+
+        .waisi{
+          z-index: 5;
+          background: url(../img/wa.png);
+          background-repeat: no-repeat;
+          background-size:70%;
+          width: 100%;
+          height: 100%;
+          margin-top: 0px;
+          background-position: center;
+        }
+
+
+        .dc{
+          position: relative;
+          background-color: rgb(0, 0, 0);
+          width: 60px;
+          height: 60px;
+          opacity: 40%;
+          display: flex;
+          align-items: center;
+          border-radius: 100px;
+          margin-left: 20px;
+          transition: 0.5s ease;
+
+          
+        }
+        .dc::after{
+          content: "DISCORD";
+          color: white;
+          font-weight: bold;
+          font-size: 120%;
+          padding-left: 65px;
+          position:absolute;
+          transform: scalex(0);
+          background-color: rgb(0, 0, 0);
+          width: 120px;
+          height: 60px;
+          opacity: 100%;
+          display: flex;
+          align-items: center;
+          border-radius: 100px;
+          box-shadow: rgb(255, 255, 255) 0px 0px 10px;
+          transition: 0.5s;
+          transform-origin: left;
+        }
+        
+        .dc:hover::after{     
+          transform: scalex(1);       
+        }
+
+        .dcisi{
+          background: url(../img/dc.png);
+          background-repeat: no-repeat;
+          background-size: 80%;
+          width: 100%;
+          height: 100%;
+          margin-left: px;
+          background-position: center;
+          z-index: 1;
+          
+        }
+
+        .namadc::before{
+          color: white;
+          font-weight: bold;
+          font-size: 90%;
+          margin-left: 5px;
+          
+        }
+
+        .isikontakkanan{
+          width:40%;
+          height: 60vh;
+          margin-top: 30px;
+          margin-left: 20px;
+        }
+        
+        .kotakgmail{
+          background-color: rgba(0, 0, 0, 0.429);
+          width: 80%;
+          height: 100%;
+          opacity: 100%;
+          margin-left: 20px;
+          border-radius: 20px;
+          padding-top: 10px;
+          
+        }
+
+        .inputnama{    
+          width: 100%;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px;
+          
+        }
+
+        .isiinputnama{
+          background-color: black;
+          width: 400px;
+          height: 100%;
+          opacity: 50%;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+        }
+
+        .nama{
+          font-size: 100%;
+          width: 180%;
+          margin-left:10px ;
+          color: rgb(255, 255, 255);
+          background: none;
+          border: none;
+        }
+
+        .inputemail{
+          width: 100%;
+          height: 40px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 30px;
+        }
+
+        .pesan{
+          width: 100%;
+          height: 70px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: 60px;
+        }
+
+        .isipesan{
+          background-color: black;
+          width: 400px;
+          height: 130px;
+          opacity: 50%;
+          border-radius: 10px;
+          display: flex;
+          padding-top: 0px;
+          
+        }
+
+        .message{
+          font-size: 100%;
+          width: 180%;          
+          margin-left: 10px;
+          color: rgb(255, 255, 255);
+          background: none;
+          border: none;
+          margin-top: 10px;
+        }
+
+        .kirimpesan{
+          margin-top: 30px;
+          background-color: black;
+          width: 160px;
+          height: 50px;
+          margin-top: 50px;
+          margin-left: 25px;
+          opacity: 50%;
+          border-radius: 10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          scale: 1;
+          transition: 0.3s ease;
+        }
+
+        .isikirim{
+          color: rgb(0, 195, 255);
+          font-weight: bold;
+          font-size: 90%;
+          width: 151px;
+          height: 41px;
+          border-radius: 10px;
+          border: 2px solid rgb(0, 0, 169);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          scale: 1;
+        }
+
+        .isikirim:hover{
+          color: aliceblue;
+          border: 2px solid rgb(104, 212, 255);
+        }
+
+        .kirimpesan:hover{
+          transform:scale(1.11) ;
+          box-shadow: 0px 0px 40px rgb(107, 107, 240);
+          transition: 0.2s;
+          
+        }
